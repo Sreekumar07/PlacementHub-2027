@@ -1,0 +1,200 @@
+/* =========================================
+   COMPONENT EXTENSIONS
+========================================= */
+
+
+/* DOMAIN COLOR VARIANTS */
+
+.domain-card[data-color="purple"] .domain-icon {
+    color: #d8b4fe;
+}
+
+.domain-card[data-color="blue"] .domain-icon {
+    color: #93c5fd;
+}
+
+.domain-card[data-color="green"] .domain-icon {
+    color: #86efac;
+}
+
+.domain-card[data-color="orange"] .domain-icon {
+    color: #fdba74;
+}
+
+
+/* HOVER LIFT */
+
+.hover-lift {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.35);
+}
+
+
+/* STATUS */
+
+.status-high {
+    color: #a7f3d0;
+}
+
+.status-moderate {
+    color: #fde68a;
+}
+
+.status-very-high {
+    color: #86efac;
+}
+
+
+/* FORM ELEMENTS */
+
+input:focus {
+    outline: none;
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #05070d;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            #7c3aed,
+            #0891b2
+        );
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:
+        linear-gradient(
+            #8b5cf6,
+            #22d3ee
+        );
+}
+
+
+/* SELECTION */
+
+::selection {
+    color: white;
+
+    background: rgba(139,92,246,0.8);
+}
+
+
+/* FAVORITE */
+
+.favorite-btn.active {
+    animation:
+        favoritePop 0.35s ease;
+}
+
+
+/* RESOURCE LINKS */
+
+.resource-link {
+    display: inline-block;
+
+    margin-top: 9px;
+
+    color: var(--primary-light);
+
+    font-size: 10px;
+}
+
+
+/* CARD LOADING */
+
+.loading-card {
+    min-height: 250px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.06),
+            rgba(255,255,255,0.02)
+        );
+
+    background-size: 200% 100%;
+}
+
+
+/* DOMAIN SEARCH RESULTS */
+
+.search-highlight {
+    color: white;
+
+    background:
+        rgba(139,92,246,0.25);
+
+    border-radius: 3px;
+}
+
+
+/* TOOLTIP */
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+
+    position: absolute;
+
+    bottom: calc(100% + 8px);
+
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        translateY(5px);
+
+    padding: 5px 8px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 6px;
+
+    color: white;
+
+    background: #0b0f19;
+
+    white-space: nowrap;
+
+    font-size: 9px;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: 0.2s ease;
+
+    z-index: 20;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+
+    transform:
+        translateX(-50%)
+        translateY(0);
+}

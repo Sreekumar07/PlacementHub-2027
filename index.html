@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Placement Hub 2027 - Explore career domains, skills, roadmaps, projects and placement opportunities for CSE students.">
+
+    <title>Placement Hub 2027 | Career Discovery</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+<div class="background-orbs">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+</div>
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">&lt;/&gt;</span>
+            <span>Placement<span>Hub</span></span>
+            <small>2027</small>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="domains.html">Domains</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="domains.html" class="nav-cta">Explore Careers →</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="hero-section">
+    <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+
+            <div class="eyebrow">
+                <span class="pulse-dot"></span>
+                CSE PLACEMENT GUIDE • 2027
+            </div>
+
+            <h1>
+                Build Your
+                <span class="gradient-text">Future</span>
+                in Tech.
+            </h1>
+
+            <p class="hero-subtitle">
+                Explore Careers, Skills, Roadmaps and Future Opportunities
+                designed for the next generation of software engineers.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="domains.html" class="btn btn-primary">
+                    Explore Domains
+                    <span>→</span>
+                </a>
+
+                <a href="roadmap.html" class="btn btn-secondary">
+                    View Roadmap
+                </a>
+            </div>
+
+            <div class="hero-mini-stats">
+                <div>
+                    <strong>15+</strong>
+                    <span>Career Paths</span>
+                </div>
+
+                <div>
+                    <strong>100+</strong>
+                    <span>Resources</span>
+                </div>
+
+                <div>
+                    <strong>2027</strong>
+                    <span>Placement Focus</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual reveal delay-1">
+
+            <div class="floating-card card-top">
+                <span class="status-dot"></span>
+                AI & ML
+                <strong>Very High Demand</strong>
+            </div>
+
+            <div class="code-window glass-card">
+
+                <div class="window-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="code-content">
+                    <p><span class="code-purple">const</span> student = {</p>
+
+                    <p class="indent">
+                        name:
+                        <span class="code-green">"Future Engineer"</span>,
+                    </p>
+
+                    <p class="indent">
+                        target:
+                        <span class="code-blue">2027</span>,
+                    </p>
+
+                    <p class="indent">
+                        skills: [
+                    </p>
+
+                    <p class="indent-2">
+                        <span class="code-green">"DSA"</span>,
+                        <span class="code-green">"AI"</span>,
+                    </p>
+
+                    <p class="indent-2">
+                        <span class="code-green">"Cloud"</span>,
+                        <span class="code-green">"Projects"</span>
+                    </p>
+
+                    <p class="indent">]</p>
+
+                    <p>};</p>
+
+                    <p class="code-comment">
+                        // Your journey starts here.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="floating-card card-bottom">
+                <span>🚀</span>
+                Job Ready
+                <strong>Roadmap Active</strong>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="stats-section">
+    <div class="container stats-grid">
+
+        <div class="stat-card glass-card reveal">
+            <div class="stat-icon">◈</div>
+            <div>
+                <strong>15</strong>
+                <span>Career Domains</span>
+            </div>
+        </div>
+
+        <div class="stat-card glass-card reveal delay-1">
+            <div class="stat-icon">⌘</div>
+            <div>
+                <strong>100+</strong>
+                <span>Learning Resources</span>
+            </div>
+        </div>
+
+        <div class="stat-card glass-card reveal delay-2">
+            <div class="stat-icon">↗</div>
+            <div>
+                <strong>2027</strong>
+                <span>Market Trends</span>
+            </div>
+        </div>
+
+        <div class="stat-card glass-card reveal delay-3">
+            <div class="stat-icon">✓</div>
+            <div>
+                <strong>1</strong>
+                <span>Career Direction</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">DISCOVER</span>
+                <h2>Featured Domains</h2>
+                <p>
+                    Find the technology path that matches your curiosity,
+                    strengths and ambitions.
+                </p>
+            </div>
+
+            <a href="domains.html" class="text-link">
+                View All Domains →
+            </a>
+        </div>
+
+        <div class="domain-grid" id="featuredDomains"></div>
+
+    </div>
+</section>
+
+
+<section class="search-section">
+    <div class="container">
+
+        <div class="search-banner glass-card">
+
+            <div>
+                <span class="section-label">CAREER SEARCH</span>
+
+                <h2>
+                    What do you want
+                    <span class="gradient-text">to build?</span>
+                </h2>
+
+                <p>
+                    Search through career domains and discover your next step.
+                </p>
+            </div>
+
+            <div class="home-search">
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="homeSearch"
+                    placeholder="Try “Artificial Intelligence”..."
+                    autocomplete="off"
+                >
+
+                <button id="homeSearchButton">
+                    Search
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section why-section">
+    <div class="container">
+
+        <div class="section-heading centered">
+            <span class="section-label">WHY PLACEMENT HUB?</span>
+            <h2>From Confusion to Direction.</h2>
+            <p>
+                A structured system for turning your college years
+                into a career launchpad.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+
+            <article class="feature-card glass-card">
+                <div class="feature-number">01</div>
+                <div class="feature-icon">◎</div>
+                <h3>Discover</h3>
+                <p>
+                    Understand what each technology domain actually means
+                    and where it can take your career.
+                </p>
+            </article>
+
+            <article class="feature-card glass-card">
+                <div class="feature-number">02</div>
+                <div class="feature-icon">◇</div>
+                <h3>Learn</h3>
+                <p>
+                    Follow carefully structured skills and resources
+                    instead of jumping randomly between technologies.
+                </p>
+            </article>
+
+            <article class="feature-card glass-card">
+                <div class="feature-number">03</div>
+                <div class="feature-icon">↗</div>
+                <h3>Build</h3>
+                <p>
+                    Convert knowledge into projects, internships and
+                    practical evidence of your skills.
+                </p>
+            </article>
+
+            <article class="feature-card glass-card">
+                <div class="feature-number">04</div>
+                <div class="feature-icon">★</div>
+                <h3>Get Placed</h3>
+                <p>
+                    Prepare for DSA, interviews, resumes, projects and
+                    real-world placement processes.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="logo footer-logo">
+                <span class="logo-mark">&lt;/&gt;</span>
+                <span>Placement<span>Hub</span></span>
+                <small>2027</small>
+            </a>
+
+            <p>
+                Helping CSE students discover careers,
+                build skills and become placement ready.
+            </p>
+        </div>
+
+        <div>
+            <h4>Explore</h4>
+            <a href="domains.html">Career Domains</a>
+            <a href="roadmap.html">Career Roadmap</a>
+            <a href="domains.html">Learning Resources</a>
+        </div>
+
+        <div>
+            <h4>Placement</h4>
+            <a href="roadmap.html">DSA Preparation</a>
+            <a href="roadmap.html">Project Building</a>
+            <a href="roadmap.html">Interview Preparation</a>
+        </div>
+
+        <div>
+            <h4>2027 Vision</h4>
+            <p>
+                Learn deeply.<br>
+                Build boldly.<br>
+                Launch your career.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <span>© 2027 Placement Hub</span>
+        <span>Built for future engineers.</span>
+    </div>
+</footer>
+
+
+<script src="data/domains-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore 15 technology career domains for 2027 placements.">
+
+    <title>Explore Domains | Placement Hub 2027</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+<div class="background-orbs">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+</div>
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">&lt;/&gt;</span>
+            <span>Placement<span>Hub</span></span>
+            <small>2027</small>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="domains.html" class="active">Domains</a>
+            <a href="roadmap.html">Roadmap</a>
+            <a href="domains.html" class="nav-cta">Explore Careers →</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="page-hero">
+    <div class="container">
+
+        <a href="index.html" class="back-link">
+            ← Back to Home
+        </a>
+
+        <span class="section-label">CAREER EXPLORER</span>
+
+        <h1>
+            Find Your
+            <span class="gradient-text">Technology Path.</span>
+        </h1>
+
+        <p>
+            Explore 15 career domains, understand the skills they require,
+            and discover where each path can lead you by 2027.
+        </p>
+
+    </div>
+</section>
+
+
+<section class="explorer-section">
+
+    <div class="container">
+
+        <div class="explorer-toolbar glass-card">
+
+            <div class="domain-search">
+                <span>⌕</span>
+
+                <input
+                    type="search"
+                    id="domainSearch"
+                    placeholder="Search domains, skills or technologies..."
+                >
+            </div>
+
+            <div class="filter-buttons" id="filterButtons">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="software">
+                    Software
+                </button>
+
+                <button class="filter-btn" data-filter="data">
+                    Data & AI
+                </button>
+
+                <button class="filter-btn" data-filter="infrastructure">
+                    Infrastructure
+                </button>
+
+                <button class="filter-btn" data-filter="design">
+                    Design
+                </button>
+
+                <button class="filter-btn" data-filter="hardware">
+                    Hardware
+                </button>
+
+                <button class="filter-btn" data-filter="business">
+                    Business
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="results-row">
+            <span id="resultCount">15 domains</span>
+
+            <button class="favorites-toggle" id="favoritesToggle">
+                ★ Favorites
+            </button>
+        </div>
+
+
+        <div class="domain-grid explorer-grid" id="domainsGrid"></div>
+
+        <div class="empty-state glass-card" id="emptyState">
+            <div>⌕</div>
+            <h3>No domains found</h3>
+            <p>
+                Try another keyword or clear your filters.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-bottom">
+        <span>© 2027 Placement Hub</span>
+        <a href="index.html">Home</a>
+    </div>
+</footer>
+
+
+<script src="data/domains-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/domains.js"></script>
+
+</body>
+</html>
